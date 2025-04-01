@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{70F54282-BAA5-4B1D-94EB-F98BD577C1A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event", "Event", "{205E7B3A-DB0D-497A-98C5-722676927192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Event.Api", "Services\Event\Event.Api\Event.Api.csproj", "{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +16,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{205E7B3A-DB0D-497A-98C5-722676927192} = {70F54282-BAA5-4B1D-94EB-F98BD577C1A9}
+		{E33292C4-BBBA-48DF-BEA6-D5EF79CFFAAE} = {205E7B3A-DB0D-497A-98C5-722676927192}
 	EndGlobalSection
 EndGlobal

@@ -10,6 +10,7 @@ namespace Event.Core.Common
         {
             UpdatedAt = DateTime.UtcNow;
         }
+        public bool IsDeleted { get; set; } = false;
     }
     public abstract class BaseEntity<T> : BaseEntity
     {

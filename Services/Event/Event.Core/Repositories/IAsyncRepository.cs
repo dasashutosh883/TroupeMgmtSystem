@@ -3,13 +3,13 @@ using System.Linq.Expressions;
 
 namespace Event.Core.Repositories
 {
-    public interface IAsyncRepository<T,Tkey> where T: BaseEntity<Tkey>
-{
-    Task<IReadOnlyList<T>> GetAllAsync();
-    Task<IReadOnlyList<T>> GetAllAsync(Expression<Func<T, bool>> predicate);
-    Task<T> GetByIdAsync(Tkey id);
-    Task<T> AddAsync(T entity);
-    Task UpdateAsync(T entity);
-    Task DeleteAsync(T entity);
-}
+    public interface IAsyncRepository<T> where T : class
+    {
+        Task<IEnumerable<T>> GetAllAsync();
+      //  Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>> predicate);
+        Task<T> GetByIdAsync(int id);
+        Task<bool> AddAsync(T entity);
+        Task<bool> UpdateAsync(T entity);
+        Task<bool> DeleteAsync(int id);
+    }
 }

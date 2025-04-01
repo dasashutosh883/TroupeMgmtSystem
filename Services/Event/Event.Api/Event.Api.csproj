@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Event.Application\Event.Application.csproj" />
+    <ProjectReference Include="..\Event.Infrastructure\Event.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\Common\Common.Shared\Common.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
