@@ -4,8 +4,8 @@ using Event.Application.Commands;
 using Event.Application.Queries;
 namespace Event.Api.Controllers.V1
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class EventController : ControllerBase
     {
         private readonly IMediator _mediator;

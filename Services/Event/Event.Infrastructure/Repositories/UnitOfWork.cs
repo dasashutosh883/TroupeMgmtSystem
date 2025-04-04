@@ -12,9 +12,9 @@ internal class UnitOfWork : IUnitOfWork
 
     public IEventRepository Event { get; }
 
-    public UnitOfWork(IEventRepository Events)
+    public UnitOfWork(IEventRepository events)
     {
-        Events = Event ?? throw new ArgumentNullException(nameof(Event));
+        Event = events ?? throw new ArgumentNullException(nameof(events));
     }
 
     public void Dispose()

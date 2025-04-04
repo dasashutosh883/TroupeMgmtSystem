@@ -754,6 +754,54 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.ReDoc/8.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Swashbuckle.AspNetCore.ReDoc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.ReDoc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/8.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2131,6 +2179,65 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.1.5": {
+      "sha512": "wjRe4oKqMYCQObQn3fTYfqumYtAUBX3I+KyXFrdu4UkjHpNsu4QrEWYahmXOdtbmHw3+w/AbuinnsLLC51dYfg==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.1.5.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.ReDoc/8.1.0": {
+      "sha512": "ZMtzRBv46arhDdnLL9fUcqtYNaDBiN5zUMEK2dwTx5XK2HNb5SlLU3hsAX85hu5Bt/V3tFCVlIjYUkbpbHPTTg==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.redoc/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/net9.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/net9.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/net9.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.ReDoc.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.redoc.8.1.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.redoc.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/8.1.0": {
+      "sha512": "PYyTbYrEz1q8N8ZpCFzY5hOkvP5gv9oIml06wrrrjGRFvVXyCF/b58FRI/9mnRKRBAmWKZR5pqhmJBzvsVveSQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "package-readme.md",
+        "swashbuckle.aspnetcore.swaggerui.8.1.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -2548,7 +2655,10 @@
       "Common.Shared >= 1.0.0",
       "Event.Application >= 1.0.0",
       "Event.Infrastructure >= 1.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 9.0.1"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.1",
+      "Scalar.AspNetCore >= 2.1.5",
+      "Swashbuckle.AspNetCore.ReDoc >= 8.1.0",
+      "Swashbuckle.AspNetCore.SwaggerUi >= 8.1.0"
     ]
   },
   "packageFolders": {
@@ -2614,6 +2724,18 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.1, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.1.5, )"
+          },
+          "Swashbuckle.AspNetCore.ReDoc": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
+          "Swashbuckle.AspNetCore.SwaggerUi": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           }
         },
         "imports": [
